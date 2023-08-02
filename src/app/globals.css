@@ -42,7 +42,7 @@ body {
 header {
   background: rgb(var(--background-start-rgb));
   z-index: 99;
-  height: 48px;
+
   margin-top: 0.5rem;
 }
 header .inner {
@@ -54,6 +54,7 @@ header .inner {
     padding-left: 0.5rem;
     margin-left: 1rem;
     margin-right: 1rem;
+    height: 48px;
   }
   header .desktop-goose {
     display: none;

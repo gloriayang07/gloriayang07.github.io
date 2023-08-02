@@ -26,7 +26,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <AppHeader />
-
         <div className="flex justify-center">{children}</div>
         <AppFooter />
       </body>

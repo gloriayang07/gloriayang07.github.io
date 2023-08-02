@@ -6,8 +6,9 @@ import name from "../../../public/name.svg";
 import Image from "next/image";
 import Link from "next/link";
 import { useViewportWidth } from "@/hooks";
+import dynamic from "next/dynamic";
 
-export default function AppHeader() {
+function AppHeader() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   useEffect(() => {
@@ -46,11 +47,7 @@ export default function AppHeader() {
             <div
               className="dropdown-content flex flex-row"
               style={{
-                display: isMobile
-                  ? isDropdownOpen
-                    ? "block"
-                    : "none"
-                  : "flex",
+                display: !isMobile ? "flex" : isDropdownOpen ? "block" : "none",
               }}
             >
               <NavItem href="/" label="About Me" onClick={toggleDropdown} />
@@ -70,3 +67,7 @@ export default function AppHeader() {
     </header>
   );
 }
+
+export default dynamic(() => Promise.resolve(AppHeader), {
+  ssr: false,
+});
