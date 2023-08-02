@@ -13,7 +13,9 @@ export default function AppFooter() {
         <div className="p-4">
           <Divider />
         </div>
-        <div className="flex justify-center text-sm">Let's stay in touch!</div>
+        <div className="flex justify-center text-sm">
+          Let&apos;s stay in touch!
+        </div>
         <div className="flex justify-center">
           <ActionIcon
             imgSrc={linkedin}

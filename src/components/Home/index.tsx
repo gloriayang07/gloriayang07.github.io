@@ -5,7 +5,6 @@ import styles from "./styles.module.css";
 import profile from "../../../public/prof.png";
 import Image from "next/image";
 import classNames from "classnames";
-const isSafari = navigator.userAgent.indexOf("Safari") != -1;
 export default function HomeView() {
   return (
     <>
@@ -21,11 +20,7 @@ export default function HomeView() {
               <div className={styles.shapeOutline3}>
                 <div className={styles.spin}>
                   <div className={styles.shape}>
-                    <div
-                      className={classNames(styles.bd, {
-                        [styles.bdAnimation]: isSafari,
-                      })}
-                    />
+                    <div className={styles.bd} />
                   </div>
                 </div>
               </div>
