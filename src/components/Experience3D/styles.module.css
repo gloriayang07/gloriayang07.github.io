@@ -1,0 +1,87 @@
+
+
+  .bg {
+    transform: perspective(1000px);
+    transform-style: preserve-3d;
+    padding-top: 5rem;
+    font: monospace;
+  }
+
+
+  .title{
+    width:100%;
+    text-align: center;
+  }
+  .title h1{
+    font-size:50px;
+    font-family: 'Exo', sans-serif;
+  }
+
+  .card1 {
+    border-radius: 25px;
+    border: 3px solid #08471d;
+    padding: 2rem;
+    text-align:center;
+    position: absolute;
+    width: 32%;
+    height: 250px;
+    transition:.6s;
+    transform: rotatex(40deg) translatey(-200px) translatez(-100px);
+  }
+  .card1:hover{
+    transform: rotatex(0deg);
+    transform: rotatez(0deg);
+    transition:.6s;
+    box-shadow: 0px 0px 20px rgba(87, 63, 12, 0.3);
+  }
+  
+  .card2 {
+    border-radius: 25px;
+    border: 3px solid #08471d;
+    padding: 2rem;
+    text-align:center;
+    position: absolute;
+    left: 33%;
+    width: 32%;
+    height: 250px;
+    transition:.6s;
+    transform: rotatex(40deg) translatey(-200px) translatez(-100px);
+  }
+  .card2:hover{
+     transform: rotatex(0deg);
+    transition:.6s;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .card3 {
+    border-radius: 25px;
+    border: 3px solid #08471d;
+
+    padding: 2rem;
+    text-align:center;
+    position: absolute;
+    left: 66%;
+    width: 32%;
+    height: 250px;
+    transition:.6s;
+    
+    transform: rotatex(40deg) translatey(-200px) translatez(-100px);
+  }
+  .card3:hover{
+     transform: rotatex(0deg);
+    transition:.6s;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .footer{
+    position: absolute;
+    top: 500px;
+    margin: 10px;
+    width: 100%;
+     text-align: center;
+  }
+  .footer h2{
+    font-size:18px;
+    font-family: 'Exo', sans-serif;
+    
+  }

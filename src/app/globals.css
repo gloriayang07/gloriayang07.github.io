@@ -1,27 +1,114 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import 'bootstrap/dist/css/bootstrap.min.css';
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb: 247, 242, 237;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: rgb(var(--background-start-rgb));
+  overflow-x: clip;
+  min-height: 100vh;
+}
+
+.col-1 {max-width: 8.33%;}
+.col-2 {max-width: 16.66%;}
+.col-3 {max-width: 25%;}
+.col-4 {max-width: 33.33%;}
+.col-5 {max-width: 41.66%;}
+.col-6 {max-width: 50%;}
+.col-7 {max-width: 58.33%;}
+.col-8 {max-width: 66.66%;}
+.col-9 {max-width: 75%;}
+.col-10 {max-width: 83.33%;}
+.col-11 {max-width: 91.66%;}
+.col-12 {max-width: 100%;}
+
+.italic {font-style: italic;}
+.bold {font-weight: bold;}
+
+header {
+  background: rgb(var(--background-start-rgb));
+  z-index: 99;
+  height: 48px;
+  margin-top: 0.5rem;
+}
+header .inner {
+  border-bottom: 1px solid rgba(79,122,94, 0.3);
+}
+
+@media (max-width: 768px) {
+  header .inner {
+    padding-left: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  header .desktop-goose {
+    display: none;
+  }
+
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropbtn {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(var(--background-start-rgb));
+    top: 48px;
+    right: -1rem;
+    width: 100vw; 
+    min-width: 160px;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(79,122,94, 0.3);
+  }
+
+  .dropdown-content {
+    padding: 0.5rem 0.75rem;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+}
+
+@media (min-width: 769px) {
+  header {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+  .dropbtn {
+    display: none;
+  }
+
+  header .mobile-goose {
+    display: none;
+  }
+
 }
