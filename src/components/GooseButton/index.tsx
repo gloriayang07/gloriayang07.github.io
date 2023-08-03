@@ -1,11 +1,16 @@
 "use client";
-import styles from "./styles.module.css";
 import gooseHide from "./gooseHide.svg";
 import gooseShow from "./gooseShow.svg";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
-export default function GooseButton({ className }: { className: string }) {
+export default function GooseButton({
+  className,
+  onClick,
+}: {
+  className: string;
+  onClick: Function;
+}) {
   const [hideGoose, setHideGoose] = useState(false);
 
   useEffect(() => {
@@ -24,12 +29,9 @@ export default function GooseButton({ className }: { className: string }) {
     <>
       <div className={`${className} flex p-2`}>
         <Image src={hideGoose ? gooseHide : gooseShow} alt="logo" />
-        <button onClick={handleClick} className="pl-2">
+        <button onClick={onClick} className="pl-2">
           {hideGoose ? "Show" : "Hide"} goose
         </button>
-        <div hidden={hideGoose} className={styles.path}>
-          <div className={styles.goose} />
-        </div>
       </div>
     </>
   );
