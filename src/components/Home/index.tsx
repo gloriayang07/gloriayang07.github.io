@@ -1,10 +1,6 @@
 "use client";
-import Link from "next/link";
 import React from "react";
 import styles from "./styles.module.css";
-import profile from "../../../public/prof.png";
-import Image from "next/image";
-import classNames from "classnames";
 export default function HomeView() {
   return (
     <>

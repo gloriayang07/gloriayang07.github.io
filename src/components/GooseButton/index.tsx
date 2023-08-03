@@ -9,7 +9,7 @@ export default function GooseButton({
   onClick,
 }: {
   className: string;
-  onClick: Function;
+  onClick: React.MouseEventHandler<HTMLButtonElement>;
 }) {
   const [hideGoose, setHideGoose] = useState(false);
 
