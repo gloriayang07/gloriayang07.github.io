@@ -57,9 +57,8 @@ header .inner {
     height: 48px;
   }
   header .desktop-goose {
-    display: none;
+    display: none !important;
   }
-
 
   .dropdown {
     position: relative;
@@ -67,9 +66,6 @@ header .inner {
   }
 
   .dropbtn {
-    padding: 10px;
-    font-size: 16px;
-    border: none;
     cursor: pointer;
 
   }
@@ -109,7 +105,7 @@ header .inner {
   }
 
   header .mobile-goose {
-    display: none;
+    display: none !important;
   }
 
 }

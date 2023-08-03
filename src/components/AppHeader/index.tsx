@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useViewportWidth } from "@/hooks";
 import dynamic from "next/dynamic";
+import menu from "./menu.svg";
 
 function AppHeader() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -42,7 +43,7 @@ function AppHeader() {
         <div className="flex">
           <div className="dropdown">
             <button onClick={toggleDropdown} className="dropbtn">
-              Menu
+              <Image src={menu} alt="" />
             </button>
             <div
               className="dropdown-content flex flex-row"

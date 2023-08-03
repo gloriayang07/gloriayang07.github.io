@@ -27,9 +27,9 @@ export default function GooseButton({ className }: { className: string }) {
         <button onClick={handleClick} className="pl-2">
           {hideGoose ? "Show" : "Hide"} goose
         </button>
-      </div>
-      <div hidden={hideGoose} className={styles.path}>
-        <div className={styles.goose} />
+        <div hidden={hideGoose} className={styles.path}>
+          <div className={styles.goose} />
+        </div>
       </div>
     </>
   );
