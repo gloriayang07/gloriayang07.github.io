@@ -64,7 +64,7 @@ export default function ExperienceView() {
         href="https://www.ibm.com/"
         summary={
           <div>
-            <h2 className="bold">Back-end Developer</h2>
+            <h2 className="bold">Software Engineer</h2>
             <h2 className="italic">Aug. 2021 - June 2022</h2>
             <h2 className="text-nowrap">Perl, Docker, Redhat, openShift</h2>
           </div>
