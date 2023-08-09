@@ -6,7 +6,7 @@ export default function ResumeView() {
     <>
       <iframe
         className={styles.iframe}
-        src="https://docs.google.com/document/d/e/2PACX-1vTkl0QdcNDjT_PF4bo2kJkwf8N4iRnRyWB4Xkvy2Yyy8xl5ze1lmrHIwDvwt7Mx3KezcHvPgaMFWSLD/pub?embedded=true"
+        src="https://drive.google.com/file/d/1t5Gaa3m6WC2iWjaNyZVRnvkZH215l67i/preview"
         width="90%"
         allow="autoplay"
       ></iframe>
