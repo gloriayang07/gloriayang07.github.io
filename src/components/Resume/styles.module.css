@@ -1,8 +1,8 @@
 .iframe {
   display: block;
-  width: 100%;
+  width: 90vw;
   min-height:420px;
-  height: 100%;
+  height: auto;
   animation: fadeIn 0.75s ease-in;
 }
 
