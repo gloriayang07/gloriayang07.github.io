@@ -9,11 +9,12 @@ interface NavItemProps {
 }
 
 export default function NavItem({ href, label, onClick }: NavItemProps) {
+  const image = <Image src={plant} alt="logo" className={styles.iconOuter} />;
   return (
     <nav>
       <Link href={href} onClick={onClick}>
-        <div className="flex p-2 text-nowrap">
-          <Image src={plant} alt="logo" />
+        <div className={`${styles.container} flex p-2 text-nowrap`}>
+          {image}
           <div className={styles.navItem}>{label}</div>
         </div>
       </Link>

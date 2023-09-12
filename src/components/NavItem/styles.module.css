@@ -4,25 +4,31 @@
     padding: 0.5rem;
     display: inline-block;
     position: relative;
-    color: #08471d;
+    color: #000000;
     cursor: pointer;
   }
-  
-.navItem::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 4px;
-    bottom: 0;
-    left: 0;
-    background-color: #08471d;
-    transform-origin: bottom right;
-    transition: transform 0.5s ease-out;
-  }
 
-.navItem:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+
+  .container:hover .iconOuter {
+    transition: transform 450ms;
+
+    animation: gelatine 1s ;
   }
   
+  /* .iconOuter {
+    transition: transform 450ms;
+  } */
+  /* .iconOuter:hover {
+    animation: gelatine 1s ;
+  } */
+  
+  .image {
+    width: 24px;
+  }
+  
+  @keyframes gelatine {
+    from, to { transform: scale(1, 1); }
+    25% { transform: scale(0.9, 1.1); }
+    50% { transform: scale(1.1, 0.9); }
+    75% { transform: scale(0.95, 1.05); }
+  }

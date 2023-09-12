@@ -9,9 +9,9 @@
   }
 
   .bio {
-    padding-right: 2rem;
     animation: fadeInTop 0.75s ease-in both;
     z-index: 0;
+    font-size: 1rem;
   }
   .bio p {
     padding-bottom: 1rem;
@@ -79,6 +79,16 @@
     background-repeat: no-repeat;
     display: flex;
     animation: spin 35s ease-in-out infinite alternate-reverse;
+  }
+
+  .profile {
+    animation: fadeInBottom ease-in 0.75s;
+  }
+  .divider {
+    border-right: 2px solid #252525;
+  }
+  .divider .none {
+    display: none;
   }
 
 

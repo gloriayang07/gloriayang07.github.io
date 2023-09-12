@@ -10,7 +10,7 @@ import { ExperienceCard } from "./ExperienceCard";
 
 export default function ExperienceView() {
   return (
-    <div className="block">
+    <div className="block p-12">
       {/* <img className={styles.img} src="https://picsum.photos/id/1022/200/200" /> */}
       {/* <div className={styles.cardOuter}>
         <div className={styles.cardInner}>

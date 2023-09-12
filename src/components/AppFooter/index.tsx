@@ -10,9 +10,7 @@ export default function AppFooter() {
   return (
     <>
       <footer className={styles.footer}>
-        <div className="p-4">
-          <Divider />
-        </div>
+        <div className="pb-4"></div>
         <div className="flex justify-center text-sm">
           Let&apos;s stay in touch!
         </div>

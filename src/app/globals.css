@@ -5,7 +5,7 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 247, 242, 237;
+  --background-start-rgb: 255, 255, 243;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -42,12 +42,10 @@ body {
 header {
   background: rgb(var(--background-start-rgb));
   z-index: 99;
-
+  border-bottom: 2px solid #252525;
   margin-top: 0.5rem;
 }
-header .inner {
-  border-bottom: 1px solid rgba(79,122,94, 0.3);
-}
+
 
 @media (max-width: 768px) {
   header .inner {
@@ -93,13 +91,11 @@ header .inner {
 
 @media (min-width: 769px) {
   header {
-    margin-left: 4rem;
-    margin-right: 4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .dropbtn {
     display: none;
   }
-
-
 }

@@ -8,7 +8,7 @@ function getViewportWidth() {
       window.innerWidth || 0
     );
   }
-  return 0;
+  return Infinity;
 }
 export function useViewportWidth() {
   const [viewportWidth, setViewportWidth] = useState(getViewportWidth());
@@ -26,7 +26,6 @@ export function useViewportWidth() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-  console.log(viewportWidth);
 
   return viewportWidth <= 768;
 }

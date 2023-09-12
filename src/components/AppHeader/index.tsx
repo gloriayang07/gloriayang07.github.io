@@ -82,13 +82,13 @@ function AppHeader() {
                   onClick={toggleDropdown}
                 />
                 <div className="d-block d-md-none">
-                  <GooseButton onClick={handleClick} className="mobile-goose" />
+                  <GooseButton hideGoose={hideGoose} onClick={handleClick} />
                 </div>
               </div>
             </div>
           </div>
           <div className="d-none d-md-block">
-            <GooseButton onClick={handleClick} className="desktop-goose" />
+            <GooseButton hideGoose={hideGoose} onClick={handleClick} />
           </div>
         </div>
       </header>

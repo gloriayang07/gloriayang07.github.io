@@ -1,7 +1,6 @@
 .footer {
   bottom: 0;
-  padding: 2rem;
-  margin-top: 1rem;
+  border-top: 2px solid #252525;
 }
 
 .iconOuter {
