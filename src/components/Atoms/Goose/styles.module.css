@@ -1,0 +1,36 @@
+
+.goose {
+  background-image: url(goose.svg);
+  background-size: 615px;
+  animation: goose 1s steps(12) infinite;
+}
+
+.goose:hover{
+  background-image: url(gooseHover.svg);
+  animation-play-state: paused;
+}
+
+@keyframes goose {
+  from{
+    background-position: 0;
+  }to{
+    background-position: -615px;
+  }
+}
+
+.path {
+  animation: path 35s steps(280) infinite;
+}
+
+.path:hover {
+  animation-play-state: paused;
+}
+
+@keyframes path {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -35px;    
+  }
+}

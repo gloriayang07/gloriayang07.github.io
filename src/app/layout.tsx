@@ -1,14 +1,13 @@
-import NavItem from "@/components/NavItem";
+import NavItem from "@/components/Atoms/NavItem";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import GooseButton from "@/components/GooseButton";
+import GooseButton from "@/components/Atoms/GooseButton";
 import name from "../../public/name.svg";
 import Image from "next/image";
 import Link from "next/link";
-import AppFooter from "@/components/AppFooter";
-import { Divider } from "@/components/HDivider";
-import AppHeader from "@/components/AppHeader";
+import AppFooter from "@/components/Molecules/AppFooter";
+import AppHeader from "@/components/Molecules/AppHeader";
 
 const inter = Inter({ subsets: ["latin"] });
 
