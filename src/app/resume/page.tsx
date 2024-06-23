@@ -1,6 +1,6 @@
 import React from "react";
-import Container from "@/components/Container";
-import ResumeView from "@/components/Resume";
+import Container from "@/components/Atoms/Container";
+import ResumeView from "@/components/Views/Resume";
 
 export default function Resume() {
   return (
